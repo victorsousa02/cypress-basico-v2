@@ -126,7 +126,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.get('a').invoke('removeAttr','target').click()
         cy.contains('Talking About Testing').should('be.visible')
     });
-    it.only('Teste 20 - Testa a página da política de privavidade de forma independente', function(){
+    it('Teste 20 - Testa a página da política de privavidade de forma independente', function(){
         cy.visit('./src/privacy.html')
         cy.contains('Talking About Testing').should('be.visible')
     });
